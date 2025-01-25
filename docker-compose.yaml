@@ -1,0 +1,13 @@
+
+services:
+  next:
+    container_name: next
+    working_dir: /app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env.production  
+    ports:
+      - "3000:3000"
+    command: ["node", "server.js"]
