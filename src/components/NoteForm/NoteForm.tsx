@@ -2,6 +2,7 @@ import { Note } from "@/model/note";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { formAction } from "@/acitons/actions";
 import { randomUUID } from "crypto";
 
 interface NoteFormProps {
